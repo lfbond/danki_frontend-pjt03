@@ -1,0 +1,654 @@
+/* CONFIGURAÇÃO BÁSICA DO CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Open Sans";
+}
+
+html, body {
+    height: 100%;
+}
+
+.container{
+	max-width: 1280px;
+	margin:0 auto;
+}
+
+.clear{
+	clear: both;
+}
+
+/* ************************************** */
+/* CONFIGURAÇÃO DO ARQUIVO ATUAL DO SITE */
+/* inicio do Header */
+header {
+    width: 100%;
+    height: 60vh;
+    min-height: 800px;
+    padding: 40px 2%;
+    /* max-height: 700px; */
+    background-size: cover;
+    background-position: center;
+    background-image: url('../imagens/capa.png');
+    font-weight: 300;
+}
+
+header .logo {
+    position: relative;
+    top: -10px;
+    float: left;
+    width: 180px;
+    height: 60px;
+    background-image: url('../imagens/logo-danki.png');
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    /* background-color: transparent; */
+}
+
+header nav {
+    float: right;
+}
+
+header nav.desktop ul {
+    list-style-type: none;
+}
+
+header nav.desktop ul li {
+    float: left;
+    padding: 0 20px;
+}
+
+header nav.desktop ul li a {
+    color: white;
+}
+
+header nav.mobile {
+    cursor: pointer;
+    display: none;
+    width: 32px;
+    height: 32px;
+    background-image: url('../imagens/menu.png');
+    background-size: 100% 100%;
+}
+
+/* header nav.mobile:hover ul {
+    opacity: 1;
+} */
+
+header nav.mobile ul {
+    /* opacity: 0;
+    transition: 1s; */
+    display: none;
+    background-color: white;
+    position: absolute;
+    width: 100%;
+    left: 0;
+    top: 80px;
+    list-style-type: none;
+    text-align: center;
+}
+
+header nav.mobile ul li {
+    padding: 8px 0;
+    border: 1px solid black;
+}
+
+header nav.mobile ul li:hover {
+    background-color: rgb(230,230,230);
+}
+
+header nav.mobile ul li a {
+    color: black;
+    text-decoration: none;
+}
+
+.chamada1 {
+    max-width: 500px;
+    float: right;
+    margin: 120px 130px;
+}
+
+.chamada1 h2 {
+    font-size: 30px;
+    color: white;
+    font-weight: 300;
+}
+
+.chamada1 p {
+    font-size: 15px;
+    color: white;
+    margin-top: 10px;
+}
+
+/* ************************************** */
+/* inicio da section Sessao1 */
+section.sessao1 {
+    width: 100%;
+    background-color: #472562;
+    padding: 0px 2%;
+    height: 400px;
+}
+
+section.sessao1 .container {
+    max-width: 1000px;
+}
+
+.texto-sessao1 {
+    float: left;
+    width: 50%;
+    position: relative;
+    left: 80px;
+    margin: 60px 0;
+    padding-left: 80px;
+    color: white;
+}
+
+.texto-sessao1 h2 {
+    font-weight: 300;
+    font-size: 26px;
+}
+
+.texto-sessao1 p {
+    margin-top: 30px;
+    font-size: 15px;
+    font-weight: 400;
+}
+
+.texto-sessao1 ul {
+    font-size: 15px;
+    list-style-position: inside;
+}
+
+.texto-sessao1 ul li {
+    float: left;
+    width: 100%;
+    margin-top: 8px;
+}
+
+.btn1-texto {
+    background-color: #ff703d;
+    width: 165px;
+    height: 44px;
+    font-size: 15px;
+    color: white;
+    cursor: pointer;
+    margin-top: 30px;
+    text-align: center;
+    line-height: 44px;
+    border-radius: 30px;
+}
+
+.device-sessao1 {
+    float: left;
+    width: 50%;
+    position: relative;
+    top: -30px;
+    height: 430px;
+    background-image: url('../imagens/device.png');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+/* ************************************** */
+/* inicio da section Sessao2 */
+.sessao2 {
+    padding-left: 2%;
+    padding-right: 2%;
+    background-color: white;
+    text-align: center;
+}
+
+.sessao2 .container {
+    max-width: 1000px;
+}
+
+.sessao2 h2 {
+    color: #472663;
+    font-weight: 600;
+}
+
+.sessao2 p {
+    color: #472663;
+    margin-top: 30px;
+    max-width: 800px;
+    display: inline-block;
+    text-align: justify;
+}
+
+.sessao2 img {
+    position: relative;
+    top: 100px;
+    width: 100%;
+    margin-top: 20px;
+}
+
+/* ************************************** */
+/* inicio da section Sessao3 */
+.sessao3 {
+    width: 100%;
+}
+
+.part1 {
+    color: white;
+    float: left;
+    width: 50%;
+    padding: 140px 0 90px 2%;
+    background-color: #835fa7;
+}
+
+.part1 .wraper-part1 {
+    max-width: 500px;
+    float: right;
+}
+
+.part1 h2 {
+    font-weight: 600;
+    font-style: italic;
+    font-size: 23px;
+}
+
+.part1 p {
+    padding-top: 10px;
+    font-size: 16px;
+    line-height: 30px;
+}
+
+.part2 {
+    float: left;
+    width: 50%;
+    padding: 140px 0 80px 2%;
+    background-color: white;
+}
+
+.scrollEquipe {
+    max-width: 600px;
+    padding-left: 20px;
+    overflow: hidden;
+}
+
+.scroll-wraper {
+    width: 100%;
+}
+
+.sobre-autor {
+    float: left;
+    width: 100%;
+    padding: 0 20px;
+}
+
+.titulo-autor {
+    float: left;
+    width: 95%;
+}
+
+.wraper-titulo-autor {
+    float: left;
+}
+
+.titulo-autor h2 {
+    color: #232323;
+    font-weight: 600;
+    font-size: 20px;
+    padding: 10px 1% 0 0;
+}
+
+.titulo-autor p {
+    color: #232323;
+    padding: 5px 0;
+    font-size: 11px;
+    font-style: italic;
+}
+
+.titulo-autor .img-autor {
+    float: left;
+    margin-left: 2%;
+    width: 50px;
+    height: 50px;
+    position: relative;
+    top: 15px;
+    border-radius: 25px;
+    background-image: url('../imagens/actor1.png');
+    background-size: contain;
+    background-position: center;
+    /* background-color: gray; */
+}
+
+.slider-bullets {
+    width: 100%;
+    float: left;
+    padding-left: 40px;
+    margin-top: 10px;
+}
+
+.slider-bullets span {
+    width: 16px;
+    height: 16px;
+    float: left;
+    border-radius: 8px;
+    margin-right: 8px;
+    cursor: pointer;
+    background-color: rgb(180,180,180);
+}
+
+
+
+/* ************************************** */
+/* inicio da section Sessao diferenciais */
+section.diferenciais{
+	padding:40px 0;
+}
+
+section.diferenciais > .container > h2{
+	text-align: center;
+	font-size: 27px;
+	font-weight: 300;
+	color: #472563;
+}
+
+.box-diferenciais{
+	margin-top:40px;
+}
+
+.box-single-diferencial{
+	float: left;
+	width: 33.3%;
+	padding:0 10px;
+}
+
+.box-single-diferencial h2{
+	font-size: 55px;
+	text-align: center;
+	color:#472563; 
+}
+
+.box-single-diferencial p{
+	font-size: 15px;
+	color: rgb(100,100,100);
+}
+
+
+
+/* ************************************** */
+/* inicio da section Sessao4 */
+section.sessao4 {
+    background-color: #472563;
+    padding: 100px 2%;
+}
+.form {
+    float: left;
+    width: 50%;
+    color: white;
+}
+
+.form h2 {
+    font-size: 23px;
+    font-weight: 600;
+    padding: 0 3%;
+}
+
+.form p {
+    font-size: 15px;
+    font-weight: 300;
+    max-width: 400px;
+    padding: 0 3%;
+}
+
+.form form {
+    margin-top: 15px;
+}
+
+.form form input[type=text],
+.form form input[type=email] {
+    width: 90%;
+    max-width: 500px;
+    margin-top: 8px;
+    height: 58px;
+    padding-left: 8px;
+    line-height: 58px;
+    border: 1px solid rgb(200,200,200);
+}
+
+.form form textarea {
+    width: 90%;
+    max-width: 500px;
+    padding: 15px;
+    border: 1px solid rgb(200,200,200);
+    height: 160px;
+    margin-top: 8px;
+}
+
+.form form input[type=submit] {
+    border: 0;
+    background-color: #ff703d;
+    width: 165px;
+    height: 44px;
+    font-size: 15px;
+    color: white;
+    cursor: pointer;
+    margin-top: 30px;
+    border-radius: 30px;
+}
+
+.map-wraper {
+    float: left;
+    width: 50%;
+    color: white;
+}
+
+.map-wraper h2{
+    font-size: 23px;
+    font-weight: 600;
+}
+
+.map-wraper3 {
+    width: 100%;
+    float: left;
+    max-width: 480px;
+    position: relative;
+}
+
+.map-wraper2 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding-top: 100%;
+}
+
+.map { /* é somente substituir a class: map / div iframe*/
+    margin-top: 10px;
+    left: 0;
+    top: 0;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    border: 5px solid gray;
+}
+
+/* ************************************** */
+/* inicio do footer */
+footer {
+    font-size: 14px;
+    color: white;
+    padding: 40px 2%;
+    background-color: #192123;
+}
+
+footer p:nth-of-type(1) {
+    float: left;
+}
+
+footer p:nth-of-type(2) {
+    float: right;
+}
+
+
+
+
+/* ************************************************** */
+/* Inicio das medias screen */
+/* max-width: 830px */
+@media screen and (max-width: 830px){
+    .chamada1 {
+        max-width: none;
+        width: 100%;
+        text-align: center;
+        float: none;
+        margin: 100px 0;
+    }
+    
+    .chamada1 h2 {
+        font-size: 30px;
+        color: white;
+        padding: 0 10px;
+        font-weight: 300;
+    }
+    
+    .chamada1 p {
+        font-size: 15px;
+        color: white;
+        margin-top: 10px;
+    }
+}
+
+/* max-width: 768px */
+@media screen and (max-width: 768px){
+    /* inicio do Header */
+    header {
+        width: 100%;
+        height: auto;
+        padding: 40px 2%;
+        min-height: 60vh;
+        
+    }
+
+    header nav.desktop {
+        display: none;
+    }
+
+    header nav.mobile {
+        display: block;
+    }
+
+    /* ********************* */
+    /* inicio da section Sessao1 */
+    section.sessao1 {
+        padding: 40px 2%;
+        height: auto;
+        text-align: center;
+    }
+
+    .texto-sessao1 {
+        width: 100%;
+        margin: 0;
+        padding-left: 0;
+        position: static;
+        float: none;
+        display: inline-block;
+    }
+
+    .texto-sessao1 ul {
+        margin-top: 20px;
+        display: inline-block;
+    }
+
+    .texto-sessao1 ul li {
+        float: none;
+        text-align: left;
+    }
+
+    .btn1-texto {
+        display: inline-block;
+    }
+
+    .device-sessao1 {
+        display: none;
+    }
+
+    .sessao2 {
+        padding-top: 40px;
+        background-color: white;
+        text-align: center;
+    }
+
+    section.sessao4 .container{
+        text-align: center;
+    }
+
+    .form {
+        float: none;
+        width: 100%;
+    }
+
+    .form p {
+        display: inline-block;
+        text-align: justify;
+    }
+
+    .map-wraper {
+        float: none;
+        width: 100%;
+        padding: 0 4%;
+        margin-top: 40px;
+    }
+
+    .map-wraper3 {
+        width: 80%;
+        padding-top: 80%;
+        float: none;
+        display: inline-block;
+        max-width: none;
+        position: relative;
+    }
+    
+    .map-wraper2 {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        padding-top: 0;
+    }
+}
+
+/* max-width: 600px */
+@media screen and (max-width: 600px){
+	.part1 {
+        width: 100%;
+        padding: 40px 2%;
+    }
+
+    .part2 {
+        width: 100%;
+        padding: 40px 2%;
+    }
+
+    .sessao2 img {
+        position: relative;
+        top: 100px;
+        width: 100%;
+        margin-top: 20px;
+    }
+
+    .sessao2 img {
+        top: 10px;
+        margin-top: 20px;
+    }
+
+    /* inicio do footer */
+    footer {
+        text-align: center;
+    }
+
+    footer p:nth-of-type(1) {
+        float: none;
+    }
+
+    footer p:nth-of-type(2) {
+        margin-top: 8px;
+        float: none;
+    }
+}
